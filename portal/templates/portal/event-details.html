@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event-list</title>
+</head>
+<body>
+
+
+    <p> {{ event }} </p>
+    <p> {{ event.title }} </p>
+    <p> {{ event.description }} </p>
+    <p> {{ event.date }} </p>
+    <p> {{ event.location }} </p>
+        <button onclick="document.location='/portal/reg'" type="submit"  > Register </button>
+
+    {% for i in list %}
+
+        <button onclick="document.location='/portal/reg'" type="submit"  > submit</button>
+    {% endfor %}
+
+</body>
+</html>

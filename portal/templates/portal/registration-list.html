@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration-list</title>
+</head>
+<body>
+
+<form action="{% url "reg-list" %}" method="post">
+{% csrf_token    %}
+    <p>{{ form }}</p>
+    <button type="submit" > submit </button>
+
+ </form>
+
+</body>
+</html>

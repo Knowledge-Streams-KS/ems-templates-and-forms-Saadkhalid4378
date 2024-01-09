@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event-list</title>
+</head>
+<body>
+
+    {% for i in list %}
+    <p>{{ i }}</p>
+    <p>{{ i.title }}</p>
+    <p>{{ i.description }}</p>
+    <p>{{ i.date }}</p>
+    <p>{{ i.location }}</p>
+        <button onclick="document.location='/portal/reg'" type="submit"  > submit</button>
+    {% endfor %}
+
+</body>
+</html>

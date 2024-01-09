@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event-Form</title>
+</head>
+<body>
+
+       <form action="/portal/model-event/" method="post">
+       {% csrf_token %}
+           <p>{{ form }}</p>
+        <button onclick="document.location='/portal/reg'" type="submit"  > submit</button>
+
+       </form>
+
+</body>
+</html>
